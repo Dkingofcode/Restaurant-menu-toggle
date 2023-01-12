@@ -11,15 +11,15 @@ body{
 }
 
 .menu{
-    border: 1px solid;
+   padding: 2rem;      
 }
 
 .title{
-    border: 1px solid;
     padding: 1rem;
     text-align: center;
     margin: 0 auto;
-    width: 30%;
+    margin-bottom: 50px;
+    width: 200px;
     position: relative;
 }
 
@@ -32,17 +32,47 @@ body{
     left: 40%;
 }
 
-.section-center{
+.btn-container{
+    margin-bottom: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
 
+.filter-btn{
+    border: 2px solid sandybrown;
+    padding: 1rem;
+     color: sandybrown;
+     background-color: antiquewhite;
+     border-radius: 10px;
+}
+
+.filter-btn:hover{
+    color: rgb(252, 240, 225);
+    background-color: sandybrown;
+    transition: all 0.6s ease;
+}
+
+.filter-btn:active{
+    color: white;
+    background-color: rgb(250, 154, 137);
+}
+
+.section-center{ 
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content:center ;
+     gap: 1rem;
 }
 
 .section-center .menu-item{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: left;
-    border: 1px solid;
+    width: 45%;
 }
 
 .menu-item img{
@@ -54,19 +84,65 @@ body{
 }
 
 .item-info{
-    border: 1px solid;
     margin: 0 auto;
     width: 40%;
+    
 }
 
 .item-info header{
    display: flex; 
    justify-content: space-between;
-   border: 1px solid;
 }
 
+.item-info header .price{
+    color: #345543;
+}
 
+.item-info .item-text{
+    margin-top: 10px;
+    font-size: 13px;
+    color:rgb(82, 71, 58);
+}
 
+@media (max-width: 900px){
+    body{
+        background: antiquewhite;
+    }
+
+    .section-center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+         gap: 1rem;
+    }
+
+    .section-center .menu-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        gap: 1rem;
+        margin-bottom: 100px;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .menu-item img{
+        width: 37%;
+        height: 190px;
+        object-fit: cover;
+        border: 2px solid rgb(216, 173, 116);
+        border-radius: 10px;
+    }
+    
+    .item-info{
+        margin: 0 auto;
+        width: 40%;
+        
+    }
+    
+}
 
 
 
